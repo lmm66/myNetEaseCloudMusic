@@ -139,7 +139,6 @@ export default {
     axios({
       url: "http://localhost:3000/personalized/newsong",
       method: "GET",
-      withCredentials: true,
       // params: {
       //   limit: 30,
       // },
@@ -151,7 +150,6 @@ export default {
     axios({
       url: "http://localhost:3000/personalized/mv",
       method: "GET",
-      withCredentials: true,
     }).then((res) => {
       this.mvs = res.data.result;
     });
